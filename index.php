@@ -8,7 +8,9 @@
 <body>
     <main>
         <?php 
-    echo '<h1>Hello world</h1>'
+    $name = 'Amit';
+    $age = 22;
+    echo "<h1>Hello world, my name is $name and Im $age years old</h1>";
     ?>
     </main>
 </body>
