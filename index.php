@@ -8,16 +8,17 @@
 <body>
     <main>
 
-
         <form action="index.php" method="get">
-            Name: <input type="text" name="name" />
+            <input type="number" name="num1" />
+            <input type="number" name="num2" />
             <input type="submit" />
         </form>
         <br />
-
-        <?php    
-        echo $_GET["name"]
-    ?>
+        Answer: <?php if (isset($_GET['num1']) && isset($_GET['num2'])) {
+            echo $_GET['num1'] + $_GET['num2'];
+        } else {
+            echo 0;
+        } ?>
     </main>
 </body>
 
