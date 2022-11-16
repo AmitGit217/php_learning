@@ -9,16 +9,11 @@
     <main>
 
         <form action="index.php" method="post">
-            <div style="display:flex; flex-direction: column;">
-                Apple: <input type="checkbox" name="fruits[]" value="apple" />
-                Orange: <input type="checkbox" name="fruits[]" value="orange" />
-                Pear: <input type="checkbox" name="fruits[]" value="pears" />
-            </div>
-            <input type="submit" />
+
         </form>
         <?php
-        $fruits = $_POST['fruits'];
-        echo $fruits[0];
+        $grades = ['Jim' => 'A+', 'Pam' => 'A-', 'Oscar' => 'C+'];
+        echo $grades['Jim'];
         ?>
     </main>
 </body>
