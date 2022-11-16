@@ -8,9 +8,9 @@
 <body>
     <main>
         <?php 
-    $name = 'Amit';
+    $name ="Amit";
     $age = 22;
-    echo "<h1>Hello world, my name is $name and Im $age years old</h1>";
+    echo  str_replace("Amit", "Bob", $name);
     ?>
     </main>
 </body>
