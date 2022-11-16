@@ -7,10 +7,16 @@
 
 <body>
     <main>
-        <?php 
-    $name ="Amit";
-    $age = 22;
-    echo  str_replace("Amit", "Bob", $name);
+
+
+        <form action="index.php" method="get">
+            Name: <input type="text" name="name" />
+            <input type="submit" />
+        </form>
+        <br />
+
+        <?php    
+        echo $_GET["name"]
     ?>
     </main>
 </body>
