@@ -8,17 +8,13 @@
 <body>
     <main>
 
-        <form action="index.php" method="get">
-            <input type="number" name="num1" />
-            <input type="number" name="num2" />
+        <form action="index.php" method="post">
+            <input type="password" name="password" />
+
             <input type="submit" />
         </form>
         <br />
-        Answer: <?php if (isset($_GET['num1']) && isset($_GET['num2'])) {
-            echo $_GET['num1'] + $_GET['num2'];
-        } else {
-            echo 0;
-        } ?>
+        Answer: <?php echo $_POST['password']; ?>
     </main>
 </body>
 
