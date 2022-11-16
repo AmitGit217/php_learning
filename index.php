@@ -9,12 +9,17 @@
     <main>
 
         <form action="index.php" method="post">
-            <input type="password" name="password" />
-
+            <div style="display:flex; flex-direction: column;">
+                Apple: <input type="checkbox" name="fruits[]" value="apple" />
+                Orange: <input type="checkbox" name="fruits[]" value="orange" />
+                Pear: <input type="checkbox" name="fruits[]" value="pears" />
+            </div>
             <input type="submit" />
         </form>
-        <br />
-        Answer: <?php echo $_POST['password']; ?>
+        <?php
+        $fruits = $_POST['fruits'];
+        echo $fruits[0];
+        ?>
     </main>
 </body>
 
