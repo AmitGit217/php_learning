@@ -8,12 +8,11 @@
 <body>
     <main>
         <?php
-        $isMale = true;
-        if ($isMale) {
-            echo 'Hello World !';
-        } else {
-            echo 'World Hello !';
+        function getMax($num1, $num2)
+        {
+            return $num1 > $num2 ? $num1 : $num2;
         }
+        echo getMax(17, 4);
         ?>
     </main>
 </body>
