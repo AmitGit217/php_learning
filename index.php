@@ -8,11 +8,12 @@
 <body>
     <main>
         <?php
-        function hello()
-        {
-            return 'Hello';
+        $isMale = true;
+        if ($isMale) {
+            echo 'Hello World !';
+        } else {
+            echo 'World Hello !';
         }
-        echo hello();
         ?>
     </main>
 </body>
