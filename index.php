@@ -7,13 +7,12 @@
 
 <body>
     <main>
-
-        <form action="index.php" method="post">
-
-        </form>
         <?php
-        $grades = ['Jim' => 'A+', 'Pam' => 'A-', 'Oscar' => 'C+'];
-        echo $grades['Jim'];
+        function hello()
+        {
+            return 'Hello';
+        }
+        echo hello();
         ?>
     </main>
 </body>
