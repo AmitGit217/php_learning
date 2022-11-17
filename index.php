@@ -16,10 +16,10 @@
         {
             public $title;
             private $price;
-            function __construct($aTitle, $aPrice)
+            function __construct($aTitle, $price)
             {
                 $this->title = $aTitle;
-                $this->price = $aPrice;
+                $this->setPrice($price);
             }
 
             function showTitle()
@@ -27,8 +27,18 @@
                 echo $this->title;
                 echo $this->price;
             }
+
+            function setPrice($price)
+            {
+                $arr = [45, 47, 38];
+                if (in_array($price, $arr)) {
+                    return $this->price = $price;
+                } else {
+                    return $this->price = 10;
+                }
+            }
         }
-        $book1 = new Book('Harry Potter', 45);
+        $book1 = new Book('Harry Potter', 16);
         $book1->showTitle();
         ?>
 
