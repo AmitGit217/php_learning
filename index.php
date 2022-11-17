@@ -14,18 +14,21 @@
         <?php
         class Book
         {
-            var $title;
-            function __construct($aTitle)
+            public $title;
+            private $price;
+            function __construct($aTitle, $aPrice)
             {
                 $this->title = $aTitle;
+                $this->price = $aPrice;
             }
 
             function showTitle()
             {
                 echo $this->title;
+                echo $this->price;
             }
         }
-        $book1 = new Book('Harry Potter');
+        $book1 = new Book('Harry Potter', 45);
         $book1->showTitle();
         ?>
 
