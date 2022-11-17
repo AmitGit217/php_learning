@@ -38,8 +38,14 @@
                 }
             }
         }
+
+        class CookBook extends Book
+        {
+        }
         $book1 = new Book('Harry Potter', 16);
+        $book2 = new CookBook('Hello World', 43);
         $book1->showTitle();
+        $book2->showTitle();
         ?>
 
 
