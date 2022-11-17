@@ -7,6 +7,10 @@
 
 <body>
     <main>
+
+
+
+
         <?php
         class Book
         {
@@ -15,10 +19,20 @@
             {
                 $this->title = $aTitle;
             }
+
+            function showTitle()
+            {
+                echo $this->title;
+            }
         }
         $book1 = new Book('Harry Potter');
-        echo $book1->title;
+        $book1->showTitle();
         ?>
+
+
+
+
+
     </main>
 </body>
 
