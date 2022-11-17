@@ -11,13 +11,12 @@
         class Book
         {
             var $title;
-            var $length;
+            function __construct($aTitle)
+            {
+                $this->title = $aTitle;
+            }
         }
-
-        $book1 = new Book();
-        $book1->title = 'Harry Potter';
-        $book1->length = 450;
-
+        $book1 = new Book('Harry Potter');
         echo $book1->title;
         ?>
     </main>
